@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     'tourist taxi Aurangabad',
     'local sightseeing Aurangabad'
   ],
-  authors: [{ name: 'Aura Cabs' }],
-  creator: 'Aura Cabs',
+  authors: [{ name: 'Aura Cabs' }, { name: 'Shaikh Faiz from Aurangabad Maharashtra' }],
+  creator: 'Designed and developed by Shaikh Faiz from Aurangabad Maharashtra',
   publisher: 'Aura Cabs',
   formatDetection: {
     email: false,

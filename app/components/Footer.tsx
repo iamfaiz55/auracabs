@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
     <footer className="bg-slate-950 text-slate-300 py-16 md:py-24 border-t border-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
-          
+
           {/* Brand */}
           <div className="space-y-6">
             <Link href="/" className="inline-block">
@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
 
         <div className="pt-8 border-t border-slate-900 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold text-slate-500 uppercase tracking-wider">
           <p>&copy; {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved.</p>
-          <p>Developed and design by <a href="https://shaikhfaiz.top" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">shaikhfaiz</a></p>
+          <p>Designed and developed by <a href="https://shaikhfaiz.top" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">Shaikh Faiz</a></p>
         </div>
       </div>
     </footer>
