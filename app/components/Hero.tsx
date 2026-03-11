@@ -20,19 +20,7 @@ const Hero: React.FC = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-slate-50">
-      {/* Proactive Preloading for internal slides */}
-      <div className="hidden">
-        {HERO_SLIDES.map((slide, i) => (
-          <Image
-            key={`preload-${slide.id}`}
-            src={slide.image}
-            alt="preload"
-            fill
-            priority
-            sizes="1vw"
-          />
-        ))}
-      </div>
+      {/* Removed the bulk preload block as it caused network congestion */}
 
       <AnimatePresence mode="wait">
         <motion.div
@@ -51,9 +39,9 @@ const Hero: React.FC = () => {
             src={HERO_SLIDES[currentSlide].image}
             alt={HERO_SLIDES[currentSlide].title}
             fill
-            priority
+            priority={currentSlide === 0}
             className="object-cover opacity-90"
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 100vw"
           />
         </motion.div>
       </AnimatePresence>

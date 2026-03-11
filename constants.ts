@@ -10,21 +10,21 @@ export const LOCATION = "Chhatrapati Sambhaji Nagar (Aurangabad), Maharashtra";
 export const HERO_SLIDES = [
   {
     id: 1,
-    image: 'https://images.pexels.com/photos/4882665/pexels-photo-4882665.jpeg',
+    image: 'https://images.pexels.com/photos/4882665/pexels-photo-4882665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     tag: 'Tours & Travels',
     title: "Best Taxi Service in Aurangabad",
     description: "Your trusted travel partner in Chhatrapati Sambhaji Nagar. Experience the timeless beauty of Ajanta & Ellora caves with our premium fleet."
   },
   {
     id: 2,
-    image: 'https://images.pexels.com/photos/28257150/pexels-photo-28257150.jpeg',
+    image: 'https://images.pexels.com/photos/28257150/pexels-photo-28257150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     tag: 'Premium Car Rental',
     title: "Luxury Car Rental in Sambhaji Nagar",
     description: "Rent premium Innova Crysta and Kia Carens. Top-rated car rental service for corporate travels and family tours in Aurangabad."
   },
   {
     id: 3,
-    image: 'https://images.pexels.com/photos/6522114/pexels-photo-6522114.jpeg',
+    image: 'https://images.pexels.com/photos/6522114/pexels-photo-6522114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     tag: 'Airport Specialist',
     title: "Aurangabad Airport Pickup & Drop",
     description: "Reliable airport taxi service in Chhatrapati Sambhaji Nagar. Affordable transfers to Mumbai, Pune, and Shirdi with professional drivers."

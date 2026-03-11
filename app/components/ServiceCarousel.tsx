@@ -54,7 +54,7 @@ const SERVICES = [
     title: "Local Sightseeing",
     description: "Explore Bibi Ka Maqbara, Daulatabad Fort, and Panchakki with our flexible local packages.",
     icon: MapPin,
-    image: "https://images.pexels.com/photos/9224488/pexels-photo-9224488.jpeg",
+    image: "https://images.pexels.com/photos/9224488/pexels-photo-9224488.jpeg?auto=compress&cs=tinysrgb&w=800",
     color: "bg-emerald-500"
   }
 ];
