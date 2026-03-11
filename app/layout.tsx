@@ -23,8 +23,8 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Aurangabad Taxi Rental | Premium Car Hire Chhatrapati Sambhaji Nagar',
-    template: '%s | Aurangabad Taxi Rental'
+    default: 'Aura Cabs | Premium Car Hire Chhatrapati Sambhaji Nagar',
+    template: '%s | Aura Cabs'
   },
   description: 'Top-rated taxi service in Chhatrapati Sambhaji Nagar (Aurangabad). Premium car rental for Ajanta Ellora tours, airport pickup/drop, and intercity travel. Book Innova Crysta, Kia Carens, and Dzire.',
   keywords: [
@@ -39,25 +39,25 @@ export const metadata: Metadata = {
     'tourist taxi Aurangabad',
     'local sightseeing Aurangabad'
   ],
-  authors: [{ name: 'Aurangabad Taxi Rental' }],
-  creator: 'Aurangabad Taxi Rental',
-  publisher: 'Aurangabad Taxi Rental',
+  authors: [{ name: 'Aura Cabs' }],
+  creator: 'Aura Cabs',
+  publisher: 'Aura Cabs',
   formatDetection: {
     email: false,
     address: true,
     telephone: true,
   },
   openGraph: {
-    title: 'Aurangabad Taxi Rental | Premium Cab Service in Chhatrapati Sambhaji Nagar',
+    title: 'Aura Cabs | Premium Cab Service in Chhatrapati Sambhaji Nagar',
     description: 'Explore Ajanta and Ellora with the most reliable taxi service in Aurangabad. Airport transfers and intercity travel at best rates.',
-    url: 'https://aurangabadtaxirental.com',
-    siteName: 'Aurangabad Taxi Rental',
+    url: 'https://auracabs.services',
+    siteName: 'Aura Cabs',
     locale: 'en_IN',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Aurangabad Taxi Rental | Premium Cab Service',
+    title: 'Aura Cabs | Premium Cab Service',
     description: 'Book premium taxis in Aurangabad for Ajanta Ellora tours and airport transfers.',
   },
   robots: {

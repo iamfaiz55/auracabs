@@ -241,7 +241,7 @@ export default function Home() {
               <div>
                 <h2 className="text-3xl font-bold text-slate-900 mb-6 font-serif">Your Trusted Travel Partner in Chhatrapati Sambhaji Nagar (Aurangabad)</h2>
                 <p className="text-slate-600 mb-4">
-                  Welcome to <strong>Aurangabad Taxi Rental</strong>, the premier taxi service in Chhatrapati Sambhaji Nagar. We provide 24/7 car rental solutions for tourists, corporate clients, and local residents. Whether you're looking for an <em>airport pickup and drop</em> or a full-day heritage tour, we have you covered.
+                  Welcome to <strong>Aura Cabs</strong>, the premier taxi service in Chhatrapati Sambhaji Nagar. We provide 24/7 car rental solutions for tourists, corporate clients, and local residents. Whether you're looking for an <em>airport pickup and drop</em> or a full-day heritage tour, we have you covered.
                 </p>
                 <p className="text-slate-600">
                   Our professional drivers are experts in navigating the local terrain of Maharashtra, ensuring you reach your destination safely and on time. We specialize in intercity travels to Pune, Mumbai, Shirdi, and Nashik with both one-way and round-trip options.

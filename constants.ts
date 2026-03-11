@@ -1,10 +1,10 @@
 
 import { Vehicle, Tour } from './types';
 
-export const BUSINESS_NAME = "Aurangabad Taxi Rental";
+export const BUSINESS_NAME = "Aura Cabs";
 export const PHONE_NUMBER = "+91 9960669724";
 export const WHATSAPP_NUMBER = "919960669724";
-export const EMAIL = "contact@aurangabadtaxirental.com";
+export const EMAIL = "contact@auracabs.services";
 export const LOCATION = "Chhatrapati Sambhaji Nagar (Aurangabad), Maharashtra";
 
 export const HERO_SLIDES = [

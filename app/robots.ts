@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://aurangabadtaxirental.com/sitemap.xml',
+    sitemap: 'https://auracabs.services/sitemap.xml',
   };
 }
