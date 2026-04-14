@@ -48,7 +48,7 @@ export const VEHICLES: Vehicle[] = [
     type: 'Luxury MUV',
     seats: 7,
     features: ['Fully Air Conditioned', 'Spacious Legroom', 'Premium Interior', 'Carrier for Luggage', 'Bluetooth Audio'],
-    image: '/gallery/innova.png',
+    image: '/gallery/innova-crysta.png',
     description: 'The pinnacle of comfort for long journeys and family tours. Perfect for foreigners and premium clients visiting Ajanta.',
     pricePerKm: '₹17'
   },
@@ -118,7 +118,7 @@ export const VEHICLES: Vehicle[] = [
     type: 'Group Van',
     seats: 17,
     features: ['High Capacity', 'Pushback Seats', 'Separate Luggage', 'High Roof'],
-    image: '/gallery/tempo-traveller.png',
+    image: '/gallery/Tempo-traveller.png',
     description: 'The ultimate solution for large groups and pilgrimages. Travel together, stay together.',
     pricePerKm: '₹25'
   }

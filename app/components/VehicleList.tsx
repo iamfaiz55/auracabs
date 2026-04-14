@@ -46,19 +46,19 @@ const VehicleList: React.FC<VehicleListProps> = ({ slice }) => {
           className="group relative bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100"
         >
           {/* Image Container */}
-          <div className="relative h-56 overflow-hidden">
+          <div className="relative h-48 overflow-hidden bg-slate-50/50 flex items-center justify-center p-4">
             <Image
               src={vehicle.image}
               alt={vehicle.name}
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-700"
+              className="object-contain p-6 group-hover:scale-110 transition-transform duration-700"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
-            <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold shadow-md text-amber-600">
+            <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold shadow-md text-amber-600 z-10">
               {vehicle.type}
             </div>
             {/* Price Tag */}
-            <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white px-4 py-2 rounded-xl backdrop-blur-md">
+            <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white px-4 py-2 rounded-xl backdrop-blur-md z-10">
               <span className="text-xl font-bold">{vehicle.pricePerKm}</span>
               <span className="text-xs text-slate-400 font-medium tracking-wide"> / km</span>
             </div>
