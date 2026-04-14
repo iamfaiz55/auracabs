@@ -32,7 +32,7 @@ const VehicleList: React.FC<VehicleListProps> = ({ slice }) => {
   };
 
   return (
-    <motion.div 
+    <motion.div
       variants={container}
       initial="hidden"
       whileInView="show"
@@ -40,8 +40,8 @@ const VehicleList: React.FC<VehicleListProps> = ({ slice }) => {
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
     >
       {displayVehicles.map((vehicle) => (
-        <motion.div 
-          key={vehicle.id} 
+        <motion.div
+          key={vehicle.id}
           variants={item}
           className="group relative bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100"
         >
@@ -55,12 +55,12 @@ const VehicleList: React.FC<VehicleListProps> = ({ slice }) => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold shadow-md text-amber-600">
-               {vehicle.type}
+              {vehicle.type}
             </div>
             {/* Price Tag */}
             <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white px-4 py-2 rounded-xl backdrop-blur-md">
-               <span className="text-xl font-bold">{vehicle.pricePerKm}</span>
-               <span className="text-xs text-slate-400 font-medium tracking-wide"> / km</span>
+              <span className="text-xl font-bold">{vehicle.pricePerKm}</span>
+              <span className="text-xs text-slate-400 font-medium tracking-wide"> / km</span>
             </div>
           </div>
 
@@ -85,8 +85,8 @@ const VehicleList: React.FC<VehicleListProps> = ({ slice }) => {
                 <span>Luggage</span>
               </div>
               <div className="flex items-center gap-2 text-slate-500 text-sm font-medium">
-                 <Fuel className="w-4 h-4 text-indigo-500" />
-                 <span>Diesel</span>
+                <Fuel className="w-4 h-4 text-indigo-500" />
+                <span>Diesel</span>
               </div>
             </div>
 
@@ -94,8 +94,8 @@ const VehicleList: React.FC<VehicleListProps> = ({ slice }) => {
               {vehicle.description}
             </p>
 
-            <Link 
-              href={`https://wa.me/919960669724?text=I'm interested in booking ${vehicle.name}`}
+            <Link
+              href={`https://wa.me/917030471135?text=I'm interested in booking ${vehicle.name}`}
               target="_blank"
               className="flex items-center justify-center gap-2 w-full py-4 bg-slate-50 text-slate-900 font-bold rounded-xl hover:bg-indigo-600 hover:text-white hover:shadow-lg hover:shadow-indigo-200 transition-all duration-300 group"
             >

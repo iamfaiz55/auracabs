@@ -2,8 +2,8 @@
 import { Vehicle, Tour } from './types';
 
 export const BUSINESS_NAME = "Aura Cabs";
-export const PHONE_NUMBER = "+91 9960669724";
-export const WHATSAPP_NUMBER = "919960669724";
+export const PHONE_NUMBER = "+91 9823760555";
+export const WHATSAPP_NUMBER = "917030471135"
 export const EMAIL = "contact@auracabs.services";
 export const LOCATION = "Chhatrapati Sambhaji Nagar (Aurangabad), Maharashtra";
 
@@ -38,9 +38,9 @@ export const VEHICLES: Vehicle[] = [
     type: 'Premium SUV',
     seats: 6,
     features: ['Sunroof', 'Air Purifier', 'Comfortable 3rd Row', 'Ventilated Seats'],
-    image: 'https://imgd.aeplcdn.com/370x208/n/cw/ec/144163/carens-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80',
+    image: '/gallery/kia-carens.png',
     description: 'Modern, stylish, and incredibly smooth. Great for city rides and luxury intercity travel.',
-    pricePerKm: '₹16'
+    pricePerKm: '₹15'
   },
   {
     id: 'innova-crysta',
@@ -48,9 +48,9 @@ export const VEHICLES: Vehicle[] = [
     type: 'Luxury MUV',
     seats: 7,
     features: ['Fully Air Conditioned', 'Spacious Legroom', 'Premium Interior', 'Carrier for Luggage', 'Bluetooth Audio'],
-    image: 'https://imgd.aeplcdn.com/370x208/n/cw/ec/140809/innova-crysta-exterior-right-front-three-quarter-3.png?isig=0&q=80',
+    image: '/gallery/innova.png',
     description: 'The pinnacle of comfort for long journeys and family tours. Perfect for foreigners and premium clients visiting Ajanta.',
-    pricePerKm: '₹18'
+    pricePerKm: '₹17'
   },
   {
     id: 'maruti-ertiga',
@@ -58,7 +58,7 @@ export const VEHICLES: Vehicle[] = [
     type: 'Comfort MUV',
     seats: 6,
     features: ['Smart Hybrid', 'Reclining Seats', 'Rear AC', 'Economical'],
-    image: 'https://imgd.aeplcdn.com/370x208/n/cw/ec/115777/ertiga-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80',
+    image: '/gallery/ertiga.png',
     description: 'The smart choice for family trips. Cost-effective without compromising on comfort.',
     pricePerKm: '₹14'
   },
@@ -68,29 +68,29 @@ export const VEHICLES: Vehicle[] = [
     type: 'Premium Sedan',
     seats: 4,
     features: ['Spacious Interiors', 'Rear AC Vents', 'Large Boot Space', 'Smooth Ride'],
-    image: 'https://imgd.aeplcdn.com/370x208/n/cw/ec/35470/ciaz-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80',
+    image: '/gallery/ciaz.png',
     description: 'Experience luxury on a budget. Ideal for corporate travel and small families.',
-    pricePerKm: '₹13'
+    pricePerKm: '₹14'
   },
-    {
+  {
     id: 'toyota-etios',
     name: 'Toyota Etios',
     type: 'Sedan',
     seats: 4,
     features: ['Reliable', 'Spacious Trunk', 'Comfortable Suspension', 'AC'],
-    image: 'https://imgd.aeplcdn.com/370x208/cw/ec/26569/Toyota-Etios-Exterior-102554.jpg?wm=0&q=80',
+    image: '/gallery/Etios-rental.png',
     description: 'The reliable workhorse for outstation trips. Known for its comfort and safety.',
     pricePerKm: '₹12'
   },
-    {
+  {
     id: 'hyundai-aura',
     name: 'Hyundai Aura',
     type: 'Compact Sedan',
     seats: 4,
     features: ['Compact Layout', 'Modern Tech', 'AC', 'Good Mileage'],
-    image: 'https://imgd.aeplcdn.com/370x208/n/cw/ec/140613/aura-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80',
+    image: '/gallery/aura.avif',
     description: 'Perfect for city navigation and quick airport transfers.',
-    pricePerKm: '₹11'
+    pricePerKm: '₹12'
   },
   {
     id: 'swift-dzire',
@@ -98,7 +98,7 @@ export const VEHICLES: Vehicle[] = [
     type: 'Sedan',
     seats: 4,
     features: ['Compact & Quick', 'Fuel Efficient', 'Good for Small Families', 'Air Conditioned'],
-    image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800',
+    image: '/gallery/swift-dezire.png',
     description: 'Best for 1-way intercity drops to Pune or Mumbai and local sightseeing for small groups.',
     pricePerKm: '₹12'
   },
@@ -108,7 +108,7 @@ export const VEHICLES: Vehicle[] = [
     type: 'Classic MUV',
     seats: 7,
     features: ['Reliable Performance', 'AC', 'Comfortable Seating', 'Ample Luggage Space'],
-    image: 'https://imgd.aeplcdn.com/370x208/n/cw/ec/121479/innova-crysta-exterior-right-front-three-quarter.jpeg?isig=0&q=80',
+    image: '/gallery/innova.png',
     description: 'The most trusted vehicle for Aurangabad tours. Reliable and budget-friendly for large groups.',
     pricePerKm: '₹15'
   },
@@ -118,7 +118,7 @@ export const VEHICLES: Vehicle[] = [
     type: 'Group Van',
     seats: 17,
     features: ['High Capacity', 'Pushback Seats', 'Separate Luggage', 'High Roof'],
-    image: 'https://5.imimg.com/data5/SELLER/Default/2022/11/DK/TC/ZJ/4952678/17-seater-tempo-traveller-rental-service-500x500.jpg',
+    image: '/gallery/tempo-traveller.png',
     description: 'The ultimate solution for large groups and pilgrimages. Travel together, stay together.',
     pricePerKm: '₹25'
   }
@@ -164,7 +164,7 @@ export const TOURS: Tour[] = [
       { day: '03:00 PM', activity: 'Visit the Viewpoint for a panoramic view of the caves.' },
       { day: '06:00 PM', activity: 'Return journey to Aurangabad.' }
     ],
-    price: 'Starts at ₹3,500 per car'
+    price: 'Contact for pricing and info'
   },
   {
     id: 'ellora-caves-tour',
@@ -204,7 +204,7 @@ export const TOURS: Tour[] = [
       { day: '02:00 PM', activity: 'Visit Jain and Buddhist group of caves.' },
       { day: '04:00 PM', activity: 'Return to Aurangabad.' }
     ],
-    price: 'Starts at ₹2,500 per car'
+    price: 'Contact for pricing and info'
   },
   {
     id: 'daulatabad-fort-tour',
@@ -243,7 +243,7 @@ export const TOURS: Tour[] = [
       { day: '12:00 PM', activity: 'Return to city.' },
       { day: '12:30 PM', activity: 'Visit Bibi Ka Maqbara.' }
     ],
-    price: 'Starts at ₹2,000 per car'
+    price: 'Contact for pricing and info'
   },
   {
     id: 'shirdi-darshan-tour',
@@ -271,7 +271,7 @@ export const TOURS: Tour[] = [
       { day: '01:00 PM', activity: 'Lunch.' },
       { day: '04:00 PM', activity: 'Return journey begins.' }
     ],
-    price: 'Starts at ₹3,500 per car'
+    price: 'Contact for pricing and info'
   },
   {
     id: 'shani-shingnapur-tour',
@@ -299,7 +299,7 @@ export const TOURS: Tour[] = [
       { day: 'Darshan', activity: '1 hour for Darshan and rituals.' },
       { day: 'Return', activity: 'Drive back to Aurangabad.' }
     ],
-    price: 'Starts at ₹2,800 per car'
+    price: 'Contact for pricing and info'
   },
   {
     id: 'aurangabad-pune-taxi',
@@ -331,16 +331,16 @@ export const TOURS: Tour[] = [
       { day: 'Note', activity: 'Flexible timing as per client requirement.' },
       { day: 'Route', activity: 'Via Ahmednagar / Samruddhi Mahamarg as preferred.' }
     ],
-    price: 'Starts at ₹4,000 one-way'
+    price: 'Contact for pricing and info'
   },
   {
     id: 'corporate-heritage-tour',
     title: 'Corporate Executive Heritage Tour',
     duration: '1 Full Day',
     destinations: ['Bibi Ka Maqbara', 'Panchakki', 'Aurangabad Caves', 'Himayat Bagh'],
-    image: 'https://images.unsplash.com/photo-1628065289547-0e6d585A3445?auto=format&fit=crop&q=80&w=1200',
+    image: '/gallery/corporate.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1628065289547-0e6d585A3445?auto=format&fit=crop&q=80&w=1200'
+      '/gallery/corporate.jpg'
     ],
     description: 'A compact and efficient heritage tour designed for business travelers and corporate guests. Covers the major landmarks of Aurangabad city in a time-effective manner.',
     highlights: [
@@ -363,6 +363,73 @@ export const TOURS: Tour[] = [
       { day: 'Afternoon', activity: 'Visit Panchakki and Aurangabad Caves.' },
       { day: 'Evening', activity: 'Drop back to Hotel/Airport.' }
     ],
-    price: 'Custom Pricing for Corporates'
+    price: 'Contact for pricing and info'
+  },
+  {
+    id: 'one-way-intercity-drop',
+    title: 'One-Way Intercity Drop (Any City)',
+    duration: 'One Way',
+    destinations: ['Pune', 'Mumbai', 'Nashik', 'Surat', 'Any City'],
+    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1200',
+    gallery: [
+      'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1200'
+    ],
+    description: 'Specialized one-way taxi service connecting Aurangabad with Pune, Mumbai, Nashik, or any other city. Travel comfortably and pay only for the drop without return trip charges. Reliable door-to-door service.',
+    highlights: [
+      'Pay only for one-way distance',
+      'Door-to-door pickup and drop',
+      'Well-maintained AC vehicles',
+      'Experienced long-route drivers'
+    ],
+    inclusions: [
+      'AC Transport',
+      'Fuel charges',
+      'Driver allowance'
+    ],
+    exclusions: [
+      'Toll Taxes',
+      'Parking fees',
+      'Meals during transit'
+    ],
+    itinerary: [
+      { day: 'Pickup', activity: 'Convenient pickup from your given address.' },
+      { day: 'Journey', activity: 'Smooth highway drive to the destination city.' },
+      { day: 'Drop', activity: 'Drop-off directly at your required location.' }
+    ],
+    price: 'Contact for pricing and info'
+  },
+  {
+    id: 'wedding-car-service',
+    title: 'Premium Wedding Car Rental',
+    duration: 'Customizable',
+    destinations: ['Any Venue', 'Local', 'Outstation'],
+    image: '/gallery/wedding-car-service.jpg',
+    gallery: [
+      '/gallery/wedding-car-service.jpg'
+    ],
+    description: 'Make your special day seamless and memorable with our premium wedding car services. We offer a versatile fleet of luxury sedans, MUVs, and large-capacity vehicles to accommodate the couple and guests.',
+    highlights: [
+      'Multiple cars available for the entire family',
+      'Spotless, well-maintained luxury vehicles',
+      'Professional, well-dressed chauffeurs',
+      'Flexible packages based on distance and time'
+    ],
+    inclusions: [
+      'Premium Vehicle of your choice',
+      'Professional Chauffeur',
+      'Fuel for the agreed itinerary',
+      'Flexible timings'
+    ],
+    exclusions: [
+      'Toll & Parking fees',
+      'Floral decorations',
+      'Extra distance charges'
+    ],
+    itinerary: [
+      { day: 'Pre-Wedding', activity: 'Timely arrival of clean vehicles at the pickup point.' },
+      { day: 'Event', activity: 'Chauffeur on standby for seamless venue transfers.' },
+      { day: 'Vidai/Drop', activity: 'Comfortable and safe drop to the designated location.' }
+    ],
+    price: 'Custom pricing based on cars and distance'
   }
 ];

@@ -3,7 +3,7 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Plane, Landmark, Car, Building2, MapPin, ArrowRight, PlaneLanding, PlaneTakeoff, TrainFront } from 'lucide-react';
+import { Plane, Landmark, Car, Building2, MapPin, ArrowRight, PlaneLanding, PlaneTakeoff, TrainFront, Route } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -12,7 +12,7 @@ const SERVICES = [
     title: "Airport Pickup",
     description: "Zero waiting time. We track your flight for a seamless arrival experience at Aurangabad Airport. Our chauffeur awaits you at the arrival gate.",
     icon: PlaneLanding,
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109c0f2?auto=format&fit=crop&q=80&w=800",
+    image: "https://t3.ftcdn.net/jpg/08/93/26/34/360_F_893263472_4uLj6lmg5u3J6DEfUf2TniIPGc3GeKdr.jpg",
     color: "bg-blue-600"
   },
   {
@@ -26,23 +26,17 @@ const SERVICES = [
     title: "Railway Station Transfer",
     description: "Hassle-free pickup and drop services for Aurangabad Railway Station. Available 24/7 for all major train arrivals and departures.",
     icon: TrainFront,
-    image: "https://images.unsplash.com/photo-1474487548417-781cb714d22d?auto=format&fit=crop&q=80&w=800",
+    image: "/gallery/railwayrtransport.jpg",
     color: "bg-red-500"
   },
   {
     title: "Heritage Tours",
     description: "Expertly curated tours to Ajanta and Ellora caves with local guides who know every detail.",
     icon: Landmark,
-    image: "https://images.unsplash.com/photo-1599661046289-e31887846eac?auto=format&fit=crop&q=80&w=800",
+    image: "/gallery/aurangabad-heritage.jpg",
     color: "bg-amber-500"
   },
-  {
-    title: "Intercity Connect",
-    description: "Specialized daily taxi services connecting Aurangabad with Pune and Mumbai at fixed rates.",
-    icon: Car,
-    image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800",
-    color: "bg-indigo-500"
-  },
+
   {
     title: "Corporate Rental",
     description: "Premium fleet options for business travelers and corporate executives visiting Maharashtra.",
@@ -56,6 +50,13 @@ const SERVICES = [
     icon: MapPin,
     image: "https://images.pexels.com/photos/9224488/pexels-photo-9224488.jpeg?auto=compress&cs=tinysrgb&w=800",
     color: "bg-emerald-500"
+  },
+  {
+    title: "One-Way Drop",
+    description: "Convenient one-way taxi from Aurangabad to Pune, Mumbai, or any city and area. Enjoy premium travel without paying return fare.",
+    icon: Route,
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800",
+    color: "bg-violet-500"
   }
 ];
 
@@ -70,14 +71,14 @@ const ServiceCarousel: React.FC = () => {
     const interval = setInterval(() => {
       const firstCard = container.firstElementChild as HTMLElement;
       if (!firstCard) return;
-      
+
       const itemWidth = firstCard.offsetWidth;
       const gap = parseFloat(window.getComputedStyle(container).gap) || 0;
       const scrollStep = itemWidth + gap;
-      
+
       // Check if we are near the end
       const isEnd = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 10;
-      
+
       if (isEnd) {
         container.scrollTo({ left: 0, behavior: 'smooth' });
       } else {
@@ -94,7 +95,7 @@ const ServiceCarousel: React.FC = () => {
       {/* Main Service Carousel */}
       <div className="py-12 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 md:mb-16">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -117,27 +118,27 @@ const ServiceCarousel: React.FC = () => {
         </div>
 
         {/* Carousel Container */}
-        <div 
+        <div
           ref={carouselRef}
           className="flex md:gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-8 md:px-8"
-          style={{ 
-            scrollbarWidth: 'none', 
-            msOverflowStyle: 'none' 
+          style={{
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none'
           }}
         >
           {SERVICES.map((service, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className="snap-start shrink-0 min-w-[100vw] md:min-w-[420px] h-[60vh] md:h-[550px] relative md:rounded-[3rem] overflow-hidden group shadow-2xl shadow-indigo-100/50 block"
             >
-              <Image 
+              <Image
                 src={service.image}
                 alt={service.title}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
-              
+
               <div className="absolute top-6 left-6 md:top-10 md:left-10">
                 <div className={`${service.color} w-12 h-12 md:w-16 md:h-16 rounded-2xl md:rounded-[1.25rem] flex items-center justify-center text-white shadow-xl`}>
                   <service.icon className="w-6 h-6 md:w-8 md:h-8" />
@@ -149,7 +150,7 @@ const ServiceCarousel: React.FC = () => {
                 <p className="text-slate-300 text-sm md:text-base font-medium leading-relaxed mb-4 md:mb-8 md:opacity-0 md:group-hover:opacity-100 transition-all duration-500 md:translate-y-4 md:group-hover:translate-y-0">
                   {service.description}
                 </p>
-                <Link 
+                <Link
                   href="/contact"
                   id={`service-book-btn-${index}`}
                   className="inline-flex items-center gap-2 text-white font-bold group/btn"
