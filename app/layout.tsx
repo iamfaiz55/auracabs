@@ -4,6 +4,8 @@ import { Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import dynamic from 'next/dynamic';
 import Navbar from './components/Navbar';
+import Script from 'next/script';
+
 
 const Footer = dynamic(() => import('./components/Footer'), {
   ssr: true,
@@ -77,6 +79,19 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SQ6NCGJQ08"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-SQ6NCGJQ08');
+          `}
+        </Script>
       </body>
     </html>
   );
