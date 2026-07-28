@@ -11,6 +11,7 @@ import dynamic from 'next/dynamic';
 import Hero from './components/Hero';
 import TrustBanner from './components/TrustBanner';
 import ServiceCarousel from './components/ServiceCarousel';
+import { WHATSAPP_NUMBER } from '../constants';
 
 const VehicleList = dynamic(() => import('./components/VehicleList'), {
   loading: () => <div className="h-96 flex items-center justify-center"><div className="w-8 h-8 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin" /></div>
@@ -220,7 +221,7 @@ export default function Home() {
 
               <div className="pt-4">
                 <Link
-                  href="https://wa.me/917030471135?text=I'm interested in booking a Pune Connect cab."
+                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=I'm interested in booking a Pune Connect cab.`}
                   target="_blank"
                   className="inline-flex items-center gap-3 px-8 py-4 bg-indigo-600 text-white font-bold rounded-full hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100"
                 >

@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, User, Phone, MapPin, Car, CheckCircle } from 'lucide-react';
-import { VEHICLES } from '../../constants';
+import { VEHICLES, WHATSAPP_NUMBER } from '../../constants';
 
 interface BookingFormProps {
   tourName?: string;
@@ -26,7 +26,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ tourName }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = `*New Booking Request*%0A%0AName: ${formData.fullName}%0APhone: ${formData.phone}%0AService: ${formData.serviceType}%0APickup: ${formData.pickupLocation}%0ADrop: ${formData.dropLocation}%0ADate: ${formData.date}%0AVehicle: ${formData.vehiclePreference}`;
-    window.open(`https://wa.me/917030471135?text=${message}`, '_blank');
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
     setIsSubmitted(true);
   };
 

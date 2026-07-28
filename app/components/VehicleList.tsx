@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Users, Fuel, Fan, Briefcase, Car } from 'lucide-react';
-import { VEHICLES } from '../../constants';
+import { VEHICLES, WHATSAPP_NUMBER } from '../../constants';
 // Note: In real app, you might want to fetch vehicles or pass as props, but importing constant is fine here.
 
 interface VehicleListProps {
@@ -95,7 +95,7 @@ const VehicleList: React.FC<VehicleListProps> = ({ slice }) => {
             </p>
 
             <Link
-              href={`https://wa.me/917030471135?text=I'm interested in booking ${vehicle.name}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=I'm interested in booking ${vehicle.name}`}
               target="_blank"
               className="flex items-center justify-center gap-2 w-full py-4 bg-slate-50 text-slate-900 font-bold rounded-xl hover:bg-indigo-600 hover:text-white hover:shadow-lg hover:shadow-indigo-200 transition-all duration-300 group"
             >

@@ -2,8 +2,8 @@
 import { Vehicle, Tour } from './types';
 
 export const BUSINESS_NAME = "Aura Cabs";
-export const PHONE_NUMBER = "+91 9823760555";
-export const WHATSAPP_NUMBER = "917030471135"
+export const PHONE_NUMBER = "+91 7030471135";
+export const WHATSAPP_NUMBER = "919881435556";
 export const EMAIL = "contact@auracabs.services";
 export const LOCATION = "Chhatrapati Sambhaji Nagar (Aurangabad), Maharashtra";
 
