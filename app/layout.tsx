@@ -5,7 +5,7 @@ import './globals.css';
 import dynamic from 'next/dynamic';
 import Navbar from './components/Navbar';
 import Script from 'next/script';
-
+import WhatsAppButton from './components/WhatsAppButton';
 
 const Footer = dynamic(() => import('./components/Footer'), {
   ssr: true,
@@ -89,6 +89,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <WhatsAppButton />
 
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
